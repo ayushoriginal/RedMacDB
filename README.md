@@ -1,8 +1,9 @@
-AkkaDynoDB (Reactive Storage Service)
+![0](http://i.imgur.com/TQJASIG.png)
 ==========================================================
+RedMacDB (Reactive Storage Service)
 
 Dynamo like distributed database built using Akka Cluster
-
+![1](http://i.imgur.com/9XVEpFO.png)
 ## **Introduction**
 
 _**AkkaDynoDB**_ is a _reactive_ _storage_ _service_ inspired from the Amazon dynamo distributed database
