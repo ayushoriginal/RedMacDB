@@ -113,11 +113,11 @@ Please have a look at Akka Cluster documentation here [Akka Cluster](http://akka
 
 To do
 
-![To do](https://raw.githubusercontent.com/pamu/RedMacDB/master/images/todo.png)
+![To do](http://i.imgur.com/kf2Tdsp.png)
 
 Overall RedMacDB looks like this
 
-![RedMacDB](https://raw.githubusercontent.com/pamu/RedMacDB/master/images/cluster.png)
+![RedMacDB](http://i.imgur.com/J02jBCI.png)
 
 Each Node in the cluster sends heart beats to every other node in the cluster to know whether a particluar
 node is dead or alive.RedMacDB uses Akka Cluster so, all that applies to Akka Cluster also applies to
@@ -126,13 +126,13 @@ RedMacDB
 
 Interactions of single Node of Cluster
 
-![RedMacDB Node](https://raw.githubusercontent.com/pamu/RedMacDB/master/images/node.png)
+![RedMacDB Node](http://i.imgur.com/J02jBCI.png)
 
 The above picture depicts the interactions of the single node with other nodes. All nodes are in consistent hashing ring
 
 Node in detail
 
-![RedMacDB Node](https://raw.githubusercontent.com/pamu/RedMacDB/master/images/node_detail.png)
+![RedMacDB Node](http://i.imgur.com/D77xOCX.png)
 
 Each node in the cluster consists of these three components
 
@@ -171,6 +171,6 @@ actors based on some criteria.There are two kinds of routers
 
 ## **Consistent Hashing**
 
-![RedMacDB Node](https://raw.githubusercontent.com/pamu/RedMacDB/master/images/ring.png)
+![RedMacDB Node](http://i.imgur.com/J48Fv6l.png)
 
 Consistent Hashing Router routes messages to workers based on Consistent Hashing Algorithm
