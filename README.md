@@ -1,17 +1,18 @@
-AkkaDynoDB (Reactive Storage Service)
+![0](http://i.imgur.com/TQJASIG.png)
 ==========================================================
+RedMacDB (Reactive Storage Service)
 
 Dynamo like distributed database built using Akka Cluster
-
+![1](http://i.imgur.com/9XVEpFO.png)
 ## **Introduction**
 
-_**AkkaDynoDB**_ is a _reactive_ _storage_ _service_ inspired from the Amazon dynamo distributed database
+_**RedMacDB**_ is a _reactive_ _storage_ _service_ inspired from the Amazon dynamo distributed database
 which is Highly available, scalable and resilient database [All Things distributed Paper](http://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf).
 With changing requirements of enterprise applications the way we build applications has been changing. With increasing number of
 devices that connect to the internet the traffic per server has drastically changed over years and its going to increase much more in the
 near future with the emergence of Internet of things(IOT). In order to cater to the changing requirements which cannot be handled by traditional architectures
 many enterprises started adopting distributed architectures to spread load over large number of machines and handle user requests. These applications should also
-handle data effectively and offer reliability to its users. As the number of users increasing the applications must also scalable well 
+handle data effectively and offer reliability to its uses. As the number of users increasing the applications must also scalable well 
 according to the need. Not only scalability and reliability users also expect 100% availability that means 0 down times even in case of 
 database maintenance and data migration. In order to offer these essential features enterprises have been adopting certain best practices and techniques from 
 different researches. _**Reactive design principles**_ basically convey these best practices and how systems should be built from ground up to be scalable,
@@ -108,30 +109,30 @@ detector [Akka Cluster Specification Intro](http://doc.akka.io/docs/akka/snapsho
 Please have a look at Akka Cluster documentation here [Akka Cluster](http://akka.io/docs)
 
 
-## **AkkaDynoDB Architecture**
+## **RedMacDB Architecture**
 
 To do
 
-![To do](https://raw.githubusercontent.com/pamu/AkkaDynoDB/master/images/todo.png)
+![To do](http://i.imgur.com/kf2Tdsp.png)
 
-Overall AkkaDynoDB looks like this
+Overall RedMacDB looks like this
 
-![AkkaDynoDB](https://raw.githubusercontent.com/pamu/AkkaDynoDB/master/images/cluster.png)
+![RedMacDB](http://i.imgur.com/J02jBCI.png)
 
 Each Node in the cluster sends heart beats to every other node in the cluster to know whether a particluar
-node is dead or alive.AkkaDynoDb uses Akka Cluster so, all that applies to Akka Cluster also applies to
-AkkaDynoDB
+node is dead or alive.RedMacDB uses Akka Cluster so, all that applies to Akka Cluster also applies to
+RedMacDB
 
 
 Interactions of single Node of Cluster
 
-![AkkaDynoDB Node](https://raw.githubusercontent.com/pamu/AkkaDynoDB/master/images/node.png)
+![RedMacDB Node](http://i.imgur.com/J02jBCI.png)
 
 The above picture depicts the interactions of the single node with other nodes. All nodes are in consistent hashing ring
 
 Node in detail
 
-![AkkaDynoDB Node](https://raw.githubusercontent.com/pamu/AkkaDynoDB/master/images/node_detail.png)
+![RedMacDB Node](http://i.imgur.com/D77xOCX.png)
 
 Each node in the cluster consists of these three components
 
@@ -170,6 +171,6 @@ actors based on some criteria.There are two kinds of routers
 
 ## **Consistent Hashing**
 
-![AkkaDynoDB Node](https://raw.githubusercontent.com/pamu/AkkaDynoDB/master/images/ring.png)
+![RedMacDB Node](http://i.imgur.com/J48Fv6l.png)
 
 Consistent Hashing Router routes messages to workers based on Consistent Hashing Algorithm
